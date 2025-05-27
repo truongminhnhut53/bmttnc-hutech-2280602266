@@ -1,6 +1,7 @@
 from cipher.caesar import ALPHABET 
 
 class CaesarCipher:
+    # minhnhut
     def __init__(self):
         self.alphabet = ALPHABET
     def encrypt_text(self, text: str, key: int) -> str:
@@ -17,6 +18,7 @@ class CaesarCipher:
         alphabet_len = len(self.alphabet)
         text = text.upper()
         decrypted_text = []
+        # 1
         for letter in text:
             letter_index = self.alphabet.index(letter)
             output_index = (letter_index - key) % alphabet_len
